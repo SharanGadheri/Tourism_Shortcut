@@ -9,7 +9,7 @@ import szechenyi from "../img/szechenyi.jpg";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg shadow-lg p-1 mb-2 bg-white rounded navbar-light bg-indigo">
+      <nav className="navbar navbar-expand-lg shadow-lg p-1 mb-2 navbar navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img src={logo} width="50px" height="50px" />
@@ -25,7 +25,11 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            classname="text-dark"
+          >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -46,17 +50,17 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Location
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      India
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      UAE
                     </a>
                   </li>
                   <li>
@@ -64,7 +68,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      UK
                     </a>
                   </li>
                 </ul>
