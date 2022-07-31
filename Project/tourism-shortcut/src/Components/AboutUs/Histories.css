@@ -1,0 +1,14 @@
+.Hit-page {
+    text-align: center;
+  }
+
+  .hit-PTag{
+    border-radius: 10px solid red;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .hit-PTag{
+    box-shadow: 0px 5px 10px 0px rgba(68, 64, 64, 0.5)
+  }

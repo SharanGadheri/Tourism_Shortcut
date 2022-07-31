@@ -1,7 +1,12 @@
-/* .header-div {
-    color: rgb(177, 41, 227);
-} */
+.carousel-inner h1{
+    position:absolute;
+  top:-200%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* z-index: 100; */
+}
 
-.navbarSupportedContent{
-    font-: black;
+.navbar{
+    position: sticky;
+	top: 0;
 }

@@ -5,15 +5,19 @@ import logo from "../img/logo.jpg";
 import compass from "../img/compass.jpg";
 import panorama from "../img/panorama.jpg";
 import szechenyi from "../img/szechenyi.jpg";
+// import Footers from "../landingpage/Footers";
+// import KTLogo from "../img/KTLogo.png";
+import indiaLogo from "../img/indiaLogo.svg";
 
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg shadow-lg p-1 mb-2 navbar navbar-dark bg-dark">
+      <nav className="navbar fixed-top navbar-expand-lg shadow-lg p-1 mb-2 navbar navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={logo} width="50px" height="50px" />
+            <img src={indiaLogo} width="50%" height="100px" />
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -27,8 +31,7 @@ const Header = () => {
           </button>
           <div
             className="collapse navbar-collapse"
-            id="navbarSupportedContent"
-            classname="text-dark"
+            id="navbarSupportedContent text-dark"
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -55,12 +58,12 @@ const Header = () => {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      India
+                      Road Maps
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      UAE
+                      Booking
                     </a>
                   </li>
                   <li>
@@ -68,7 +71,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      UK
+                      Travel Guidelines
                     </a>
                   </li>
                 </ul>
@@ -84,7 +87,7 @@ const Header = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-danger btn-outline-info" type="submit">
                 Search
               </button>
             </form>
@@ -128,6 +131,10 @@ const Header = () => {
                 className="d-block w-100"
                 alt="..."
               />
+              <div className="carousel-caption">
+                <h1>History of India</h1>
+                <p>We love the Big Apple!</p>
+              </div>
             </div>
             <div className="carousel-item">
               <img
@@ -137,6 +144,10 @@ const Header = () => {
                 height="560px"
                 alt="..."
               />
+              <div className="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+              </div>
             </div>
             <div className="carousel-item">
               <img
@@ -146,6 +157,10 @@ const Header = () => {
                 className="d-block w-100"
                 alt="..."
               />
+              <div className="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
             </div>
           </div>
           <button
