@@ -7,7 +7,7 @@ import Goa from "../img/Goa.jpg";
 export const Histories = () => {
   return (
     <div className="Hit-page">
-      <h2 className="Hit-national">National histories</h2>
+      <h2 className="Hit-national">National Histories</h2>
       <p className="hit-PTag">
         The most significant event between the 7th and 11th century was the
         Tripartite struggle centred on Kannauj that lasted for more than two

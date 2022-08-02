@@ -22,7 +22,7 @@ const Footer = () => {
                 to={"/home"}
                 style={{ textDecoration: "none", color: "#58BDED" }}
               >
-                <h2 style={{ color: "black" }}>Incredible!ndia</h2>
+                <h2 style={{ color: "black" }}>TravelGuide.in</h2>
               </a>
               <p>
                 eHealth, a online healthcare platform you can trust. Your health

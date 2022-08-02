@@ -8,6 +8,7 @@ import szechenyi from "../img/szechenyi.jpg";
 // import Footers from "../landingpage/Footers";
 // import KTLogo from "../img/KTLogo.png";
 import indiaLogo from "../img/indiaLogo.svg";
+import LogoU from "../img/LogoU.jpg";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
       <nav className="navbar fixed-top navbar-expand-lg shadow-lg p-1 mb-2 navbar navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={indiaLogo} width="50%" height="100px" />
+            <img src={LogoU} width="100%" height="80px" />
           </a>
 
           <button

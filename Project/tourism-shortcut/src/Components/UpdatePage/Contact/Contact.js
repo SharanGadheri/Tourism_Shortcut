@@ -32,7 +32,7 @@ const Contact = () => {
               </Col>
               <Col>
                 <h6>Email</h6>
-                <h3>info@Incredible!ndia.com</h3>
+                <h3>info@TravelGuide.in</h3>
               </Col>
             </Row>
           </Col>
