@@ -1,0 +1,47 @@
+{
+  "users":[
+    {
+    "id":1,
+"Packages":"Jaipur, Jodhpur, Udaipur",
+"Price":18999,
+"Days":"5 Nights /6 Days",
+"Inclusion":"Hotels, Sightseeing, Meals"
+      },
+      {
+    "id":2,
+        "Packages":"Jaipur, Jodhpur, Jaisalmer",
+        "Price":25000,
+        "Days":"6 Nights /7 Days",
+        "Inclusion":"Hotels, Sightseeing, Meals"
+              },
+              {
+    "id":3,
+                "Packages":"Jaipur",
+                "Price": 7999,
+                "Days":"2Nights /3 Days",
+                "Inclusion":"Hotels, Sightseeing, Meals"
+                      },
+                      {"id":4,
+    
+                        "Packages":"Delhi, Agra, Jaipur",
+                        "Price": 11000,
+                        "Days":"5 Nights /6 Days",
+                        "Inclusion":"Hotels, Sightseeing, Meals"
+                              },
+                              {"id":5,
+                                "Packages":"shimla,srinagar",
+                        "Price": 30000,
+                        "Days":"5 Nights /6 Days",
+                        "Inclusion":"Hotels, Car, Sightseeing, Meals"
+                              },
+                              {"id":6,
+                                "Packages":"Rasthan",
+                        "Price": 18000,
+                        "Days":"5 Nights /6 Days",
+                        "Inclusion":"Hotels, Car, Sightseeing, Meals"
+                              }
+
+    
+
+    ]
+  }
