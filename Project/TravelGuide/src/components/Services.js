@@ -1,21 +1,7 @@
-import React from 'react';
-import cherry from "../components/img/cherry.jpg"
+import React from "react";
 
-
-function Services() {
-  return ( 
-  <div class="food">
-   
-   
-  
- 
-  </div>
-
-
-  
-  
-  )
-
-}
+const Services = () => {
+  return <div>Services</div>;
+};
 
 export default Services;
