@@ -29,9 +29,7 @@ const Navbar = () => {
           <li>
             <Link to="/SignUp">SignUp</Link>
           </li>
-          <li>
-            <Link to="/Registration">Registration</Link>
-          </li>
+          <li>{/* <Link to="/Registration">Registration</Link> */}</li>
         </ul>
       </nav>
     </div>
