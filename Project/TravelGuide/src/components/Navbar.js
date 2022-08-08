@@ -8,7 +8,6 @@ const Navbar = () => {
       <a href="">
         <img src={logo1} />
       </a>
-
       <nav>
         <ul>
           <li>
@@ -17,9 +16,7 @@ const Navbar = () => {
           <li>
             <Link to="/Book">Booking</Link>
           </li>
-          <li>
-            <Link to="/packages">Packages </Link>
-          </li>
+          <li>{/* <Link to="/packages">Packages </Link> */}</li>
           <li>
             <Link to="/Services">Services</Link>
           </li>
