@@ -7,17 +7,17 @@ import { NavLink } from "react-router-dom";
 
 function Book() {
   return (
-    <div class="book">
-      <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="true" href="#">
+    <div className="book">
+      <div className="card text-center">
+        <div className="card-header">
+          <ul className="nav nav-tabs card-header-tabs">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="true" href="#">
                 Food{" "}
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 HOTEL
               </a>
             </li>
@@ -25,47 +25,47 @@ function Book() {
         </div>
 
         {/* book section */}
-        <div class="card-body">
-          <h5 class="card-title">Top Hotel Collections</h5>
-          <p class="card-text">Special items povided according to state wise</p>
+        <div className="card-body">
+          <h5 className="card-title">Top Hotel Collections</h5>
+          <p className="card-text">Special items povided according to state wise</p>
           <NavLink to="/SignUp"> Book Now</NavLink>
         </div>
 
-        <div class="card-group">
-          <div class="card">
-            <img src={talukamaval} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Facilities: Parking , Wifi , Bar , Food</p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+        <div className="card-group">
+          <div className="card">
+            <img src={talukamaval} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Facilities: Parking , Wifi , Bar , Food</p>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
-          <div class="card">
-            <img src={goldvalley} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+          <div className="card">
+            <img src={goldvalley} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
               </p>
             </div>
           </div>
-          <div class="card">
-            <img src={little} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+          <div className="card">
+            <img src={little} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
               </p>
             </div>
           </div>

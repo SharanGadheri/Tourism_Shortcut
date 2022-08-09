@@ -1,0 +1,21 @@
+{
+"tours":[
+
+    {"id":1,
+        "package":"Pearls of Rajasthan Tour Package-Jaipur Hodhpur & Udaipur",
+    "price":"₹ 14,500"},
+    {"id":2,
+    "package":"Pearls of Rajasthan Tour Package - Jaipur Jodhpur & Udaipur",
+"price":"₹ 18,999"},{
+    "id":3,
+    "package":"Charms of Chittorgarh with Jaipur & Ranthambore Tour Package",
+    "price":"₹11200"
+},
+{
+    
+}
+]
+
+
+
+}

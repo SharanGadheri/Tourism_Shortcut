@@ -5,6 +5,7 @@ import jaipur from "../components/img/jaipur.jpg";
 import rajsthan from "../components/img/rajsthan.jpg";
 import Andaman from "../components/img/Andaman.jpg";
 import { Typography } from "@mui/material";
+import {Link} from "react-router-dom";
 
 const Packages = () => {
   const [users, setUser] = useState([]);
@@ -16,61 +17,41 @@ const Packages = () => {
     setUser(result.data);
   };
   return (
-    <div className="packages">
-      <h3>India Tour Packages</h3>
-      <Typography>
+    <div classNameName="packages">
+      <h3 style={{textAlign:"center"}}>India Tour Packages</h3>
+      <br></br>
+      <p style={{margin:"3px 20px"}}>
         About India Tourism: A South Asian nation synonymous with the phrase
         “unity in diversity,” India is a land of rich culture and heritage. It’s
         known for its varied geographical terrain, historical monuments,
-      </Typography>
+      </p>
 
-      <p>
+      <p style={{margin:"3px 20px"}}>
         The best way to plan a trip to India is by region. When it comes to
         North India, the area comprises states like Uttarakhand, Rajasthan,
         Jammu and Kashmir, Delhi and Uttar Pradesh. It’s known for its
         breathtaking snowy terrain and the majestic Himalayas and is a paradise
         for skiing, hiking and trekking, snowboarding, camping, etc.
       </p>
-      <p>
-        The region boasts heritage sites like the Mughal Taj Mahal, colonial
-        Parliament House, Christ Church and the Namgyal Monastery, Badrinath
-        Temple and Dilwara Temples. Visit Mehrangarh Fort, Red Fort and City
-        Palace to know more about its tryst with royalty and experience riding
-        shikaras across Dal Lake, shopping at Connaught Place or spotting tigers
-        at Corbett National Park.
-      </p>
-      <p>
-        Moving to the west, India tour packages include the beautiful beaches of
-        Goa like Calangute Beach, heritage sites like Maharashtra’s Elephanta
-        Caves and Gateway of India, Mahabaleshwar’s green valleys and the vast
-        Rann of Kutch. Central India, primarily comprising Madhya Pradesh and
-        Chhattisgarh, is well-known for the Kanha National Park that organises
-        wildlife safaris and the nearly-impenetrable Gwalior Fort built by
-        Babur.
-      </p>
-      <p>
-        Champaran in Chhattisgarhs Raipur and Hajra in Bhilai frequently attract
-        large crowds. As you go south, you would find yourself in awe of its
-        temples like the Vithala Temple, Kurinji Temple and Karumadikkuttan.
-        States like Karnataka, Kerala, Tamil Nadu and Andhra Pradesh welcome you
-        with picturesque hill stations like Ooty and Coorg, expansive
-        plantations and beaches like Paradise Beach. Mysore Palace and Lalbagh
-        are pretty famous too.
-      </p>
+    <br/>
+    
+    
 
-      <h4>Popular Tour Packages for India</h4>
+      <h4 style={{textAlign:"center"}}>Popular Tour Packages for India</h4>
+      <br/>
 
-      <table className="table  table-bordered">
-        <thead className="table-info">
-          <tr>
+      <table className="table table-bordered" style={{margin:"3px 20px"}}>
+        <thead className="table-info" style={{padding:"2px"}}>
+          <tr style={{textAlign:"center"}}>
             <th scope="col">#</th>
             <th scope="col">Packages</th>
             <th scope="col">Price</th>
             <th scope="col">Days</th>
             <th scope="col">Inclusion</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style={{textAlign:"center"}}>
           {users.map((user, index) => (
             <tr key={user.id}>
               <td>{user.id}</td>
@@ -78,60 +59,66 @@ const Packages = () => {
               <td>{user.Price}</td>
               <td>{user.Days}</td>
               <td>{user.Inclusion}</td>
+              <td>
+                <Link to="/view" className="btn btn-primary">view</Link>
+              </td>
             </tr>
           ))}
         </tbody>
+
+
+
       </table>
       <h1>Top Places in India for tour packages</h1>
-      <div class="row row-cols-1 row-cols-md-4 g-3">
-        <div class="col">
-          <div class="card h-100">
-            <img src={srinagar} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Wonders of Kashmir Tour Package</h5>
+      <div className="row row-cols-1 row-cols-md-4 g-3">
+        <div className="col">
+          <div className="card h-100">
+            <img src={srinagar} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Wonders of Kashmir Tour Package</h5>
               <div>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <p>Srinagar(2N) → Pahalgam(1N) </p>
-                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <i className="fa-solid fa-indian-rupee-sign"></i>
                 <p>11,850 per adult onwa</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src={jaipur} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Wonders of jaipur Tour Package</h5>
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="card-text">This is a short card.</p>
-              <i class="fa-solid fa-indian-rupee-sign"></i>
+        <div className="col">
+          <div className="card h-100">
+            <img src={jaipur} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Wonders of jaipur Tour Package</h5>
+              <i className="fa-solid fa-location-dot"></i>
+              <p className="card-text">This is a short card.</p>
+              <i className="fa-solid fa-indian-rupee-sign"></i>
               <p>11,850 per adult onwa</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src={rajsthan} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Wonders of rajsthan Tour Package</h5>
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="card-text">Rajsthan-2N.</p>
-              <i class="fa-solid fa-indian-rupee-sign"></i>
+        <div className="col">
+          <div className="card h-100">
+            <img src={rajsthan} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Wonders of rajsthan Tour Package</h5>
+              <i className="fa-solid fa-location-dot"></i>
+              <p className="card-text">Rajsthan-2N.</p>
+              <i className="fa-solid fa-indian-rupee-sign"></i>
               <p>20000 per adult onwa</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src={Andaman} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">
+        <div className="col">
+          <div className="card h-100">
+            <img src={Andaman} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">
                 Wonders of Andaman Nicobar Tour Package
               </h5>
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="card-text">Andaman Nicobar-2S.</p>
-              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <i className="fa-solid fa-location-dot"></i>
+              <p className="card-text">Andaman Nicobar-2S.</p>
+              <i className="fa-solid fa-indian-rupee-sign"></i>
               <p>30000 per adult onwa</p>
             </div>
           </div>

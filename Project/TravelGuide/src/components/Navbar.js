@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo1 from "../components/img/logo1.jpg";
+ import logo1 from "../components/img/logo1.jpg";
 
 const Navbar = () => {
   return (
-    <div class="nav">
+    <div className="nav">
       <a href="">
-        <img src={logo1} />
+        <img src={logo1} /> 
       </a>
 
       <nav>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/Book">Booking</Link>
           </li>
           <li>
-            <Link to="/packages">Packages </Link>
+           <Link to="/packages">Packages </Link> 
           </li>
           <li>
             <Link to="/Services">Services</Link>

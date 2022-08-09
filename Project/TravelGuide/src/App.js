@@ -1,5 +1,6 @@
 import React from "react";
 
+import ReactDOM from "react-dom/client";
 import "../src/components/Nav.css";
 import Home from "../src/components/Home";
 import Book from "../src/components/Book";
@@ -16,6 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import Login from "./components/Login/Login";
+import View from "./components/View";
 
 const App = () => {
   return (
@@ -31,7 +33,8 @@ const App = () => {
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Map" element={<Map />} />
           <Route path="/login" element={<Login />} />
-        </Routes>
+          <Route path="/View" element={<View />} />
+         </Routes>
       </BrowserRouter>
       <Footer />
     </div>
